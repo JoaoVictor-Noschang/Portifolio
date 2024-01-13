@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --cor01: #e3e4e8;
+    --cor02: rgb(172, 172, 172);
+    --cor04: #1b263b;
+    --cor05: black;
+
+    --font: 'Ubuntu';
+}
+
+/*------------------- global -------------------------*/
+
+html {
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f1f1f;
+}
+
+
+/*------------------- NAV-Bar ---------------------------*/
+
+#nav-bar {
+    width: 100%;
+    padding: 15px;
+    background-color: #1b263b;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0px;
+}
+
+#nav-bar a{
+    color: rgb(1, 184, 1);
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    
+    /* background-color: antiquewhite; */
+}
+
+#nav-bar .hov:hover{
+    transition: 0.5s;
+    background-color: #ffffff1b;
+    border-radius: 3px;
+    box-shadow: rgba(1, 184, 1) 0px 0px 10px, rgba(1, 184, 1, 0.4) -4px -4px, rgba(1, 184, 1, 0.3) -8px -8px, rgba(1, 184, 1, 0.2) -12px -12px;
+}
+
+/*------------------- start --------------------------*/
+
+#apresentacao {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#joao img {
+    width: 300px;
+    border-radius: 200px;
+    border: 4px solid rgb(34, 243, 34);
+}
+
+#apresentacao article {
+    padding: 30px;
+    margin: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /*background-color: #e3e4e8;*/
+}
+
+#apresentacao article:last-of-type {
+    margin: 100px 5px;
+    padding: 10px 0;
+    width: 400px;
+}
+
+#eu {
+    color: rgba(1, 184, 1);
+    font-size: 1.5em;
+    text-align: right;
+    width: 360px;
+    padding: 20px 10px;
+    margin: 10px;
+}
+
+.redes {
+    max-width: 300px;
+    /*background-color: #e3e4e8;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes a {
+    text-decoration: none;
+}
+
+.redes img {
+    width: 60px;
+    padding: 5px;
+    margin: 7px;
+}
+
+
+/*------------------------ sobre -----------------*/
+#sobre, #projeto, #certificado{
+    background-color: #c8c8c8;
+    width: 1000px;
+    margin: 120px auto;
+    padding: 30px;
+    box-shadow: 
+    5px 5px 0px rgb(1, 184, 1),
+    -5px -5px 0px rgb(1, 184, 1),
+    -5px 5px 15px rgb(0, 255, 4, 0.6),
+    5px -5px 15px rgba(0, 255, 4, 0.6);
+}
+
+#sobre h2 {
+    text-align: center;
+    margin-bottom: 15px;
+} 
+
+#sobre p {
+    line-height: 24px;
+    text-align: justify;
+}
+
+#sobre ul {
+    margin: 15px auto 15px 40px;
+}
+
+#sobre li {
+    margin: 8px 0;
+    font-weight: 600;
+    color: green;
+}
+
+/*------------------------ projetos -----------------*/
+
+.projetos {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.projetos h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.projetos div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projetos article {
+    margin: auto;
+    padding: 15px;
+    width: 300px;
+    height: 500px;
+    text-align: justify;
+}
+
+.projetos img {
+    margin: 15px 0;
+    width: 270px;
+}
+
+.projetos article:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.242);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+/*-------------------------- certificados --------------------*/
+.certificados h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+.certificados img {
+    width: 370px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.certificados article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*------------------------ footer -----------------*/
+/*------------------------ footer -----------------*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1b1b;
+    color: #999999;
+}
+
+footer h2 {
+    font-size: 1.2em;
+    color: #999999;
+    margin: 10px 0;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+}
+
+footer section {
+    width: 150px;
+    margin: auto;
+}
+
+footer section p {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    margin: 15px 0;
+    list-style: none;
+}
+
+footer img {
+    padding: 5px;
+    width: 40px;
+}
+
+/*-------- SCROLL -----------*/
+
+body::-webkit-scrollbar {
+    width: 15px;   /* largura da barra */
+    
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #272727; /* cor de fundo da barra */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(1, 184, 1, 0.265); 
+  
+    box-shadow: 0px 0px 25px rgb(0 , 255, 0);
+  }

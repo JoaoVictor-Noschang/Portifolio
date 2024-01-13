@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --cor01: #e3e4e8;
+    --cor02: rgb(172, 172, 172);
+    --cor04: #1b263b;
+    --cor05: black;
+
+    --font: 'Ubuntu';
+}
+
+/*------------------- global -------------------------*/
+
+html {
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: auto;
+    padding: 30px;
+    background-color: var(--cor04);
+}
+
+.secoes {
+    background-color: var(--cor01);
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px #00000030;
+}
+
+h1, h2, h3{
+    color: var(--cor05);
+}
+
+h2 {
+    text-align: center;
+}
+
+.efex, .efex02, .efex03 {
+    transition: 0.2s;
+}
+
+
+
+
+/*------------------- navg ---------------------------*/
+
+header {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    position: fixed;
+    top: 10px;
+    right: 10%;
+}
+
+nav {
+    width: 90%;
+    padding: 10px;
+    background-color: var(--cor02);
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a {
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor04);
+}
+
+
+/*------------------- start --------------------------*/
+
+.apresentacao{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.joao img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.tecnologias img {
+    padding: 3px;
+    width: 40px;
+    margin: 5px 2px;
+}
+
+.redes {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.redes h1 {
+    font-size: 2em;
+    color: var(--cor05);
+}
+
+
+.redes img {
+    padding: 5px;
+    width: 40px;
+}
+
+
+/*------------------------ sobre -----------------*/
+
+.sobre {
+    margin: 20px auto 5px auto;
+}
+
+.sobre h2 {
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.sobre ul {
+    margin-left: 25px;
+    list-style: square;
+}
+
+.sobre li {
+    margin: 5px 0;
+    font-weight: bold;
+    color: var(--cor04);
+}
+
+/*------------------------ projetos -----------------*/
+
+.projetos {
+    margin: 20px auto;
+}
+
+.projetos div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.projetos article {
+    margin: auto;
+    padding: 15px;
+    width: 300px;
+    height: 500px;
+    text-align: justify;
+}
+
+.projetos img {
+    margin: 10px 0;
+    width: 270px;
+}
+
+.projetos article:hover {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.242);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+/*-------------------------- certificados --------------------*/
+.certificados h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+.certificados img {
+    width: 250px;
+    margin: 15px 0 5px 0;
+    border-radius: 10px;
+}
+
+.certificados article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px 0 15px 0;
+}
+
+
+/*------------------------ footer -----------------*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b1b1b;
+    color: #999999;
+}
+
+footer h2 {
+    font-size: 1.2em;
+    color: #999999;
+    margin: 10px 0;
+}
+
+footer h2 a {
+    text-decoration: none;
+    color: var(--cor02);
+}
+
+footer section {
+    width: 150px;
+    margin: auto;
+}
+
+footer section p {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer ul li {
+    margin: 15px 0;
+    list-style: none;
+}
+
+footer img {
+    padding: 5px;
+    width: 40px;
+}
+
+@media (min-width: 1000px){
+    .efex:hover {
+        transition: 0.5s;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.219);
+        background-color: var(--cor01);
+    }
+    
+    .efex02:hover, .efex03:hover {
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    
+    .efex02:hover {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.361);
+    }
+    
+    .efex03:hover {
+        box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.285);
+    }
+}
+
+@media (max-width: 720px) {
+
+    /*--------------------------- start ----------*/
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+
+    .redes ul {
+        margin: auto;
+    }
+
+    .redes h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    /*--------------------------- projetos ----------*/
+
+    .projetos div {
+        flex-direction: column;
+    }
+
+    .projetos article {
+        width: 500px;
+        margin: 15px auto;
+        height: 500px;
+    }
+    
+    .projetos img {
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    /*----------------------------certificacoes-------*/
+
+    .certificados img {
+        width: 190px;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    /*--------------------------- projetos ----------*/
+    .projetos article {
+        width: 350px;
+        height: 500px;
+    }
+    
+    .projetos img {
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 470px) {
+
+    .secoes {
+        padding: 20px;
+     }
+
+    /*--------------------------- projetos ----------*/
+
+
+    .projetos article {
+        padding: 10px;
+        width: 220px;
+        height: 450px;
+    }
+    
+    .projetos img {
+        width: 100px;
+    }
+
+}
