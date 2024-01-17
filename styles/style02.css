@@ -39,6 +39,7 @@ body {
     justify-content: space-evenly;
     position: fixed;
     top: 0px;
+    box-shadow: rgba(1, 184, 1, 0.292) 0px 0px 12px;
 }
 
 #nav-bar a{
@@ -54,12 +55,7 @@ body {
     /* background-color: antiquewhite; */
 }
 
-#nav-bar .hov:hover{
-    transition: 0.5s;
-    background-color: #ffffff1b;
-    border-radius: 3px;
-    box-shadow: rgba(1, 184, 1) 0px 0px 10px, rgba(1, 184, 1, 0.4) -4px -4px, rgba(1, 184, 1, 0.3) -8px -8px, rgba(1, 184, 1, 0.2) -12px -12px;
-}
+
 
 /*------------------- start --------------------------*/
 
@@ -118,7 +114,7 @@ body {
 }
 
 .redes img {
-    width: 60px;
+    max-width: 60px;
     padding: 5px;
     margin: 7px;
 }
@@ -164,6 +160,11 @@ body {
     margin: 100px auto;
 }
 
+.projetos a {
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
 .projetos h2 {
     text-align: center;
     margin-bottom: 15px;
@@ -179,20 +180,38 @@ body {
     margin: auto;
     padding: 15px;
     width: 300px;
-    height: 500px;
+    height: 550px;
     text-align: justify;
 }
 
-.projetos img {
-    margin: 15px 0;
-    width: 270px;
+.projetos p {
+    line-height: 20px;
 }
 
-.projetos article:hover {
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.242);
-    border-radius: 10px;
-    transition: 0.4s;
+.projetos img {
+    margin: 15px auto;
+    width: 98%;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
+
+.projetos button {
+    margin: 15px auto 20px auto;
+    padding: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 0.8em;
+    border-radius: 8px;
+    background-color: #1b263b;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+}
+
+.projetos button a {
+    color: rgb(0, 200, 0);
+}
+
+
 
 /*-------------------------- certificados --------------------*/
 .certificados h2 {
@@ -202,8 +221,8 @@ body {
 
 
 .certificados img {
-    width: 370px;
-    margin: 15px 0;
+    width: 400px;
+    margin: 15px auto;
     border-radius: 5px;
 }
 
@@ -263,7 +282,7 @@ footer img {
 /*-------- SCROLL -----------*/
 
 body::-webkit-scrollbar {
-    width: 15px;   /* largura da barra */
+    width: 10px;   /* largura da barra */
     
   }
   
@@ -276,3 +295,175 @@ body::-webkit-scrollbar {
   
     box-shadow: 0px 0px 25px rgb(0 , 255, 0);
   }
+
+
+/* MEDIA QUERYS */
+
+@media (min-width: 900px) {
+
+    /* NAV-BAR */
+
+    #nav-bar .hov:hover{
+        transition: 0.5s;
+        background-color: #ffffff1b;
+        border-radius: 3px;
+        box-shadow: rgba(1, 184, 1) 0px 0px 10px, rgba(1, 184, 1, 0.4) -4px -4px, rgba(1, 184, 1, 0.3) -8px -8px, rgba(1, 184, 1, 0.2) -12px -12px;
+    }
+
+    /* PROJETOS */
+
+    .projetos article:hover {
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.242);
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+}
+
+@media (max-width: 720px) {
+    
+    /* NAV-BAR */
+
+    #nav-bar {
+        width: 100%;
+        padding: 8px;
+    }
+
+    #nav-bar a{
+        font-size: 0.9em;
+        font-weight: 500;
+        width: 100px;
+        /*background-color: antiquewhite;*/
+    }
+
+
+    /*------------------- start --------------------------*/
+
+    #apresentacao {
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    #joao img {
+        width: auto;
+    }
+
+    #apresentacao article {
+        width: 420px;
+        padding-bottom: 5px;
+        /*background-color: #e3e4e8;*/
+    }
+
+    #apresentacao article:last-of-type {
+        margin: 0px auto;
+        padding-top: 5px;
+    }
+
+
+    /*------------------------ sobre -----------------*/
+
+    #sobre, #projeto, #certificado{
+        width: 420px;
+        padding: 25px;
+        font-size: 0.9em;
+    }
+
+
+    #sobre p {
+        line-height: 21px;
+    }
+
+    #sobre ul {
+        margin: 15px auto 15px 30px;
+    }
+
+    #sobre li {
+        margin: 5px 0;
+        font-weight: 500;
+    }       
+
+    /*------------------------ projetos -----------------*/
+
+    .projetos {
+        width: 420px;
+    }
+
+    
+
+    .projetos article {
+        margin: 15px auto;
+        padding: 8px;
+        width: 400px;
+        height: 450px;
+    }
+
+
+}
+
+@media (max-width: 420px) {
+
+    /* NAV-BAR */
+    
+
+    #nav-bar {
+        padding: 3px;
+        border-radius: 0px 0px 10px 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav-bar a{
+        margin: 3px 16px;
+        font-size: 0.8em;
+        background-color: rgb(113, 209, 113);
+        color: #9d00ff;
+        border-radius: 50px;
+        box-shadow: rgba(0, 255, 0, 0.314) 0px 0px 8px;
+    }
+
+    #nav-bar a:active {
+        background-color: #fff;
+    }
+
+
+    /*------------------- start --------------------------*/
+
+    #apresentacao {
+        margin-top: 100px;
+        flex-direction: column;
+    }
+
+    #joao img {
+        width: 200px;
+    }
+
+    #apresentacao article {
+        width: 320px;
+    }
+
+    .redes img {
+        width: 40px;
+        padding: 3px;
+        margin: 5px;
+    }
+
+    /*------------------------ sobre -----------------*/
+
+    #sobre, #projeto, #certificado{
+        width: 320px;
+        padding: 20px;
+        font-size: 0.86em;
+    }     
+
+    /*------------------------ projetos -----------------*/
+
+    .projetos {
+        width: 320px;
+    }
+
+
+    .projetos article {
+        margin: 15px auto;
+        padding: 5px;
+        width: 300px;
+    }
+}
