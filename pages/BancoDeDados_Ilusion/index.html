@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/database-svgrepo-com.svg" type="image/svg">
+    <title>Banco de Dados do Ilusion Services</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="assets/database-svgrepo-com.svg" alt="Ícone de Banco de Dados">
+            <h1>Banco de Dados do Ilusion Services</h1>
+        </section>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>Estruturação do Banco de dados para o site Ilusion Services</h2>
+            <p>Ao observar-se a dificuldade atual das pessoas em encontrarem bons serviços gerais de maneira rápida e fácil e com segurança, idealizou-se a ideia de implementar um site que possa fazer a ponte entre as pessoas que necessitam de um serviço específico e as empresas ou pessoas que o realizam. Com este propósito, iniciou-se o desenvolvimento do banco de dados da plataforma, onde suas características e peculiaridades podem ser observadas a seguir.</p>
+            <p>Os clientes poderão contratar um ou mais serviços de um mesmo fornecedor e solicitar um orçamento para um ou mais serviços específicos. Cada orçamento contém os detalhes do que foi solicitado pelos clientes, assim como registra o cliente que solicitou e o serviço que contém. Tanto pessoas físicas quanto empresas podem ser clientes e solicitar ou oferecer serviços. Para cada orçamento ou contrato, um chat entre o cliente e o fornecedor é estabelecido, que armazena as comunicações entre eles por meio de registro, incluindo mensagens, datas e detalhes dos participantes.</p>
+            <p>Quando um serviço é contratado, o sistema registra automaticamente a data do contrato, o local onde será realizado e o status do serviço, que pode ser pendente, em andamento ou finalizado. Da mesma forma, ao realizar uma avaliação de um serviço, o sistema registra quem fez a avaliação, a qual serviço se refere, a data da avaliação e a qualidade do serviço. Além disso, é possível incluir uma descrição opcional na avaliação.</p>
+        </section>
+        <section id="modelo-conceitual">
+            <h2>Modelo Relacional Conceitual</h2>
+            <p>Para iniciar o projeto de criação fez-se necessário a criação de um modelo conceitual relacional, que consiste em um esquema de fluxograma, ou seja, formas geométricas para representar as entidades e relacionamentos contemplados pelo banco de dados. Modelo relacional conceituial pode ser observado a seguir.</p>
+            <img src="assets/SERVIÇOSS.jpg" alt="">
+            <div class="butt"><a href="pages/modelo-rel_conc.html" target="_self"><button>IMAGEM</button></a></div>
+            <h3>Entidades identificadas e implementadas</h3>
+            <ul>
+                <li>Avaliação;</li>
+                <li>Categoria;</li>
+                <li>Chat;</li>
+                <li>Cliente;</li>
+                <li>Contrato;</li>
+                <li>Fornecedor;</li>
+                <li>Mensagem;</li>
+                <li>Mídia</li>
+                <li>Orçamento;</li>
+                <li>Serviço;</li>
+                <li>Serviço oferecido;</li>  
+            </ul>
+
+            <h3>Relacionamentos identificadas e implementadas</h3>
+            <ul>
+                <li>
+                    Um <span>cliente</span> pode solicitar vários orçamentos e um <span>orçamento</span> pode ser solicitado apenas por um cliente;
+                </li>
+                <li>
+                    Um <span>cliente</span> pode fechar vários contratos e um <span>contrato</span> pode ser fechado por apenas um cliente;
+                </li>
+                <li>
+                    Um <span>cliente</span> realiza várias avaliações e uma <span>avaliação</span> pode ser realizada por apenas um cliente;
+                </li>
+                <li>
+                    Um <span>cliente</span> utiliza vários chats e um <span>chat</span> por ser utilizado apenas por um cliente;
+                </li>
+                <li>
+                    Um <span>orçamento</span> pode conter vários serviços oferecidos e um <span>serviço oferecido</span> pode estar contido em vários orçamentos;
+                </li>
+                <li>
+                    Um <span>contrato</span> pode conter vários serviços oferecidos e um <span>serviço oferecido</span> pode estar contido em vários contratos;
+                </li>
+                <li>
+                    Um <span>fornecedor</span> pode utilizar vários chats, mas um <span>chat</span> pode ser utilizado apenas por um fornecedor;
+                </li>
+                <li>
+                    Um <span>serviço oferecido</span> pode conter apenas um serviço e um <span>serviço</span> pode estar contido em vários serviços oferecidos;
+                </li>
+                <li>
+                    Um <span>serviço oferecido</span> pode conter apenas um fornecedor e um <span>fornecedor</span> pode estar contido em vários serviços oferecidos;
+                </li>
+                <li>
+                    Uma <span>categoria</span> pode estar em vários serviços, e um <span>serviço</span> pode conter apenas uma categoria;
+                </li>
+                <li>
+                    Uma <span>mídia</span> pode estar contida em várias mensagens e uma <span>mensagem</span> pode conter apenas uma mídia;
+                </li>
+                <li>
+                    Uma <span>mensagem</span> pode estar contida em apenas um chat e um <span>chat</span> pode conter várias mensagens;
+                </li>
+                <li>
+                    Um <span>orçamento</span> contém um fornecedor e um <span>fornecedor</span> pode estar contido em vários orçamentos;
+                </li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>Modelo físico (SQL)</h2>
+            <p>Por fim, tornou-se necessário a implementação do modelo conceitual em um modelo físico utilizando a linguagem de Query SQL, onde utilizou-se da IDE MySql para a fazer respectiva implementação. Em seguidas pode ser observados os scripts para estuturação da tabela e a sua respectiva tabela com exemplos de <code>INSERTS</code> e consulta de dados com <code>SELECT</code>.</p>
+
+            <article>
+                <h3></h3>
+            </article>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>
+            Site implementado por <a href="https://github.com/JoaoVictor-Noschang">João Victor</a>
+        </h2>
+        <section class="redes">
+            <a href="">
+                <img src="assets/linkedin-svgrepo-com.svg" alt="linkedIn">
+            </a>
+            <a href="">
+                <img src="assets/github.png" alt="GitHub">
+            </a>
+            <a href="">
+                <img src="assets/instagram-svgrepo-com.svg" alt="Instagram">
+            </a>
+        </section>
+        <p>Entre em Contato!</p>
+    </footer>
+    
+</body>
+</html>

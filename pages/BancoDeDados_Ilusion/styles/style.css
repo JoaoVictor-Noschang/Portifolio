@@ -1,0 +1,221 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #e0e1dd;
+    --cor2: #b7c8df;
+    --cor2_5: #a1adbe;
+    --cor3: #0d1b2a;
+    --cor4: #262626;
+
+    --font1: 'Ubuntu', sans-serif;
+
+    --shadow: #00000072;
+    --code: #4a6dc7;
+    --efeito: #8200fc;
+}
+
+/*------- GLOBAIS */
+
+html {
+    font-family: var(--font1);
+    color: var(--cor3);
+}
+
+body {
+    background-color: #cdcdcd;
+}
+
+
+/*------- HEADER */
+
+header {
+    width: 100%;
+    height: 100px;
+    background: var(--cor1);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+header section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 530px;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+header h1 {
+    max-width: 500px;
+}
+
+header img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+/*------- MAIN */
+
+main {
+    width: 980px;
+    margin: 25px auto;
+}
+
+main section {
+    width: 100%;
+    margin: 30px auto;
+    padding: 15px;
+    background: var(--cor2);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    text-align: justify;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#modelo-conceitual img {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--cor2_5);
+}
+
+.butt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.butt button {
+    font-weight: bold;
+    margin: 10px auto 2px auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    cursor: pointer;
+    box-shadow: 0px 3px 8px var(--shadow);
+    transition: 0.4s;
+}
+
+h3 {
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+
+ul {
+    margin: 15px 0px 30px 40px;
+}
+
+ul:first-of-type {
+    columns: 2;
+}
+
+ul li {
+    margin: 8px 0;
+    line-height: 1.2em;
+}
+
+span {
+    color: var(--efeito);
+    font-size: 0.85em;
+    font-weight: 500;
+    padding: 1px;
+    border: 1px solid #8200fc69;
+    border-radius: 5px;  
+}
+
+code {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--code);
+}
+
+
+/*------- FOOTER */
+
+footer {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background: var(--cor4);
+    color: white;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--code);
+}
+
+footer p {
+    text-align: center;
+}
+
+.redes img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/*------- MEDIA QUERYS */
+
+@media (max-width: 700px){
+
+    /*------- HEADER */
+
+    header section {
+        width: 300px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    header h1 {
+        max-width: 160px;
+    }
+
+    /*------- MAIN */
+
+    main {
+        width: 95%;
+    }
+
+    ul {
+        margin-left: 25px;
+    }
+
+    /*------- HOVERs */
+
+    .butt button:hover {
+        background-color: rgb(1, 186, 1);
+        color: var(--cor3);
+        transition: 0.4s;
+        box-shadow: 0px 0px 10px rgb(124, 207, 124);
+    }
+}
+
+@media (max-width: 320px){
+
+}
