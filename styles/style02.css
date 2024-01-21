@@ -155,60 +155,61 @@ body {
 
 /*------------------------ projetos -----------------*/
 
-.projetos {
-    width: 1000px;
-    margin: 100px auto;
-}
-
-.projetos a {
-    text-decoration: none;
-    color: #1b1b1b;
-}
-
-.projetos h2 {
+#projeto h2 {
+    margin: 10px auto 20px auto;
     text-align: center;
-    margin-bottom: 15px;
+    width: 100%;
 }
 
-.projetos div {
+#projeto article{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.projetos article {
-    margin: auto;
-    padding: 15px;
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label h3 {
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    margin: 20px auto 25px auto;
+    font-size: 1.13em;
+}
+
+.card {
     width: 300px;
-    height: 550px;
-    text-align: justify;
+    height: 530px;
+    padding: 20px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
 }
 
-.projetos p {
-    line-height: 20px;
+#projeto img {
+    width: 260px;
+    height: 180px;
+    margin: 15px auto 30px auto;
 }
 
-.projetos img {
-    margin: 15px auto;
-    width: 98%;
-    border: 1px solid rgba(0, 0, 0, 0.13);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+#projeto button {
+    padding: 8px;
+    margin: 8px auto 10px auto;
+    border-radius: 5px;
+    background-color: rgb(0, 187, 255);
+    border: 1px solid rgb(0, 170, 255);
+    box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.projetos button {
-    margin: 15px auto 20px auto;
-    padding: 5px;
-    border: none;
+#projeto a {
+    text-decoration: none;
     font-weight: bold;
-    font-size: 0.8em;
-    border-radius: 8px;
-    background-color: #1b263b;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
-}
-
-.projetos button a {
-    color: rgb(0, 200, 0);
+    color: #b3fdb0;
 }
 
 
@@ -383,18 +384,7 @@ body::-webkit-scrollbar {
 
     /*------------------------ projetos -----------------*/
 
-    .projetos {
-        width: 420px;
-    }
-
     
-
-    .projetos article {
-        margin: 15px auto;
-        padding: 8px;
-        width: 400px;
-        height: 450px;
-    }
 
 
 }
@@ -456,14 +446,5 @@ body::-webkit-scrollbar {
 
     /*------------------------ projetos -----------------*/
 
-    .projetos {
-        width: 320px;
-    }
-
-
-    .projetos article {
-        margin: 15px auto;
-        padding: 5px;
-        width: 300px;
-    }
+    
 }
