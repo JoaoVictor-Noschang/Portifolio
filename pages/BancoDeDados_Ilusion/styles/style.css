@@ -34,6 +34,7 @@ body {
 }
 
 
+
 /*------- HEADER */
 
 header {
@@ -91,7 +92,7 @@ h2 {
     text-align: center;
 }
 
-#modelo-conceitual img {
+#modelo-conceitual img, #modelo-fisico img {
     margin-top: 10px;
     width: 100%;
     border-radius: 5px;
@@ -144,18 +145,10 @@ span {
     border-radius: 5px;  
 }
 
-code {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: var(--code);
-}
-
-
 /*------- FOOTER */
 
 footer {
     width: 100%;
-    height: 130px;
     text-align: center;
     background: var(--cor4);
     color: white;
