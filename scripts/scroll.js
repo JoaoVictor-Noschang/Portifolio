@@ -8,7 +8,7 @@ window.onscroll = function() {
   if (prevScrollPos > currentScrollPos) {
     header.style.top = "0";
   } else {
-    header.style.top = "-58px"; // ou o valor que você preferir para esconder
+    header.style.top = "-90px"; // ou o valor que você preferir para esconder
   }
 
   prevScrollPos = currentScrollPos;
