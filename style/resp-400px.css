@@ -5,18 +5,18 @@
     /*-  Globals  -*/
     .component h2 {
         margin-bottom: 30px;
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
 
 
     /*-  Header with NavBar  -*/
     header section { 
-        padding: 8px;
-        font-size: 0.5em;
+        padding: 5px;
+        font-size: 0.65em;
     }
 
     header nav {
-        width: 55px;
+        width: 70px;
     }
 
 
@@ -30,26 +30,27 @@
     }
 
     #joao h1 {
-        font-size: 1.3em;
-        width: 190px;
+        font-size: 1.5em;
+        width: 210px;
     }
 
     #joao h2 {
-        font-size: 1.1em;
-        width: 195px;
+        font-size: 1.4em;
+        width: 240px;
     }
 
     #joao img {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
         margin-top: 30px;
         border-radius: 500px;
     }
 
     #joao article p {
+        width: 60vw;
         text-align: center;
         margin-top: 20px;
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
 
@@ -82,14 +83,14 @@
     }
 
     #sobre p, #sobre li {
-        font-size: 0.6em;
+        font-size: 0.8em;
         line-height: 1.3em;
     }
 
 
     /*- Projects -*/
     #projetos h2 {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .card img {
@@ -113,26 +114,27 @@
 
     /*- Caertify  -*/
     .certificado {
-        width: 120px;
+        width: 190px;
     }
 
     .certificado img {
-        height: 70px;
+        height: 110px;
     }
 
     .certificado p {
-        padding: 5px;
-        font-size: 0.5em;
+        padding: 8px;
+        font-size: 0.7em;
+        height: 35px;
     }
 
 
     /*-  Footer  -*/
     #contatos {
-        height: 40vh;
+        height: 25vh;
     }
 
     #contatos #logo {
-        width: 90px;
+        width: 100px;
     }
 
     #contatos h2 {
@@ -148,11 +150,11 @@
     }
 
     #contatos li img {
-        width: 15px;
+        width: 20px;
         margin-right: 5px;
     }
 
     #contatos li a {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 }
