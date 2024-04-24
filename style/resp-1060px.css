@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@media (max-width: 1060px) {
+
+    /*-  Globals  -*/
+    .component h2 {
+        margin-bottom: 30px;
+        font-size: 2.3em;
+    }
+
+
+    /*-  Header with NavBar  -*/
+    header section { 
+        font-size: 0.9em;
+    }
+
+    header nav {
+        width: 100px;
+    }
+
+
+    /* Section - Infos */
+    #joao h1 {
+        font-size: 2.8em;
+        width: 410px;
+    }
+
+    #joao h2 {
+        font-size: 2.6em;
+        width: 445px;
+    }
+
+    #joao img {
+        width: 300px;
+    }
+
+
+    /*- Projects -*/
+    #projetos {
+        margin: 10px 0;
+    }
+
+    #projetos aside {
+        width: 80vw;
+    }
+
+    #projetos h2 {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .card img {
+        width: 150px;
+        height: 90px;
+        margin: 0 auto -19px 63%;
+        z-index: 1;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .card div {
+        margin: -5px 0;
+        border-radius: 5px;
+    }
+
+    .card div h3 {
+        font-size: 1em;
+    }
+
+    .card div p {
+        font-size: 0.9em;
+    }
+
+
+    /*- Caertify  -*/
+    #certificados article{
+        width: 65vw;
+    }
+    .certificado {
+        width: 180px;
+    }
+
+    .certificado img {
+        height: 100px;
+    }
+
+    /*-  Footer  -*/
+    #contatos #logo {
+        width: 200px;
+    }
+
+    #contatos li img {
+        width: 25px;
+    }
+
+}

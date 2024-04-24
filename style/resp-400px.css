@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@media (max-width: 510px) {
+
+    /*-  Globals  -*/
+    .component h2 {
+        margin-bottom: 30px;
+        font-size: 1.1em;
+    }
+
+
+    /*-  Header with NavBar  -*/
+    header section { 
+        padding: 8px;
+        font-size: 0.5em;
+    }
+
+    header nav {
+        width: 55px;
+    }
+
+
+    /* Section - Infos */
+    #joao article {
+        width: 90vw;
+    }
+
+    #joao aside {
+        flex-direction: column;
+    }
+
+    #joao h1 {
+        font-size: 1.3em;
+        width: 190px;
+    }
+
+    #joao h2 {
+        font-size: 1.1em;
+        width: 195px;
+    }
+
+    #joao img {
+        width: 180px;
+        height: 180px;
+        margin-top: 30px;
+        border-radius: 500px;
+    }
+
+    #joao article p {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.7em;
+    }
+
+
+    /*- Tecnologyes  -*/
+    #tecnologias {
+        padding: 15px 0;
+    }
+
+    #tecnologias article {
+        padding: 0;
+    }
+
+    #tecnologias img.width-40 {
+        width: 20px;
+    }
+    
+    #tecnologias img.width-65 {
+        width: 30px;
+    }
+    
+    #tecnologias a {
+        width: 35px;
+    }
+
+
+    /*-  Section-"Sobre"  -*/
+    #sobre article {
+        width: 80vw;
+        padding: 15px;
+    }
+
+    #sobre p, #sobre li {
+        font-size: 0.6em;
+        line-height: 1.3em;
+    }
+
+
+    /*- Projects -*/
+    #projetos h2 {
+        margin-bottom: 10px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 80px;
+        margin: 0 auto -25px 60%;
+    }
+
+    .card div h3 {
+        font-size: 0.8em;
+    }
+
+    .card div h3:last-of-type{
+        width: 190px;
+    }
+
+    .card div p{
+        font-size: 0.75em;
+    }
+
+
+    /*- Caertify  -*/
+    .certificado {
+        width: 120px;
+    }
+
+    .certificado img {
+        height: 70px;
+    }
+
+    .certificado p {
+        padding: 5px;
+        font-size: 0.5em;
+    }
+
+
+    /*-  Footer  -*/
+    #contatos {
+        height: 40vh;
+    }
+
+    #contatos #logo {
+        width: 90px;
+    }
+
+    #contatos h2 {
+        margin-bottom: 8px;
+    }
+
+    #contatos ul {
+        margin-left: 25px;
+    }
+
+    #contatos li {
+        margin: 12px 0;
+    }
+
+    #contatos li img {
+        width: 15px;
+        margin-right: 5px;
+    }
+
+    #contatos li a {
+        font-size: 0.5em;
+    }
+}
