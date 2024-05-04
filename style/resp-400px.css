@@ -91,6 +91,7 @@
     /*- Projects -*/
     #projetos h2 {
         margin-bottom: 20px;
+        font-size: 1.4em;
     }
 
     .card img {
@@ -153,5 +154,12 @@
 
     #contatos li a {
         font-size: 0.7em;
+    }
+}
+
+
+@media (max-width: 355px) {
+    header section { 
+        font-size: 0.5em;
     }
 }

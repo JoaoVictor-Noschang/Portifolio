@@ -4,7 +4,7 @@
 
     /*-  Globals  -*/
     .component {
-        height: 110vh;
+        height: 120vh;
     }
 
     /*-  Header with NavBar  -*/
@@ -25,11 +25,18 @@
     }
 
     #joao img {
-        margin-top: 25px;
+        margin-top: 15px;
+        width: 200px;
     }
 
     #joao article p {
         text-align: center;
+    }
+
+
+    /* Section Sobre */
+    #sobre {
+        height: 140vh !important;
     }
 
 
