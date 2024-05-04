@@ -129,15 +129,12 @@
 
 
     /*-  Footer  -*/
-    #contatos {
-        height: 25vh;
-    }
-
     #contatos #logo {
         width: 100px;
     }
 
     #contatos h2 {
+        font-size: 1.2em;
         margin-bottom: 8px;
     }
 

@@ -3,6 +3,9 @@
 @media (max-width: 815px) {
 
     /*-  Globals  -*/
+    .component {
+        height: 110vh;
+    }
 
     /*-  Header with NavBar  -*/
 
@@ -33,6 +36,10 @@
     /*- Projects -*/
     #projetos h2 {
         margin-bottom: 20px;
+    }
+
+    .card {
+        margin-bottom: 30px;
     }
 
     .card img {
