@@ -1,0 +1,50 @@
+.infos {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.perfil {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.maininfos {
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 5px;
+  background: black;
+  border-radius: 5px;
+
+  text-align: justify;
+  color: white;
+}
+
+.infostitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.infostitle h2 {
+  font-size: 1.125rem;
+}
+
+.infostitle img {
+  width: 20px;
+}
+
+.starinfos {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.starinfos img {
+  width: 20px;
+}

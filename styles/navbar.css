@@ -1,0 +1,42 @@
+.navbar {
+  background: #000000;
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10;
+}
+
+.navbar a {
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  transform: translateY(-2px);
+
+  transition: 0.2s;
+}
+
+.navbar img {
+  width: 25px;
+}
