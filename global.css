@@ -12,3 +12,35 @@
     min-height: 100vh;
     min-width: 100%;
 }
+
+.sectitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sectitle img {
+  width: 35px;
+  stroke: black;
+}
+
+.detalhes {
+  display: flex;
+  justify-content: end;
+}
+
+.detalhes a {
+  background: #26afff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.detalhes a:hover {
+  transform: translateY(-2px) rotate(-3deg);
+  outline: 2px solid white;
+}

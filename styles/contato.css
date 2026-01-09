@@ -1,0 +1,54 @@
+.contato {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.sectitle2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-top: 20px;
+  color: white;
+}
+
+.sectitle2 img {
+  width: 35px;
+  stroke: rgb(255, 255, 255);
+}
+
+.maincont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkcon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  width: 300px;
+  text-decoration: none;
+  color: white;
+}
+
+.linkcon:hover {
+  transform: translate(1px);
+}
+
+.linkcon img {
+  width: 20px;
+}
+
+.linkcon p {
+  width: 85%;
+}
