@@ -1,0 +1,54 @@
+.certif {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.maincert {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.certinfos {
+  background: #212529;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certinfos p {
+  text-align: justify;
+}
+
+.list {
+  padding-left: 30px;
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+
+.list li {
+  list-style: circle;
+}
+
+.certimgs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.certimgs img {
+  width: 290px;
+  border-radius: 5px;
+}

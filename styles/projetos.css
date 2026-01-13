@@ -37,7 +37,7 @@
 
 .text {
   color: white;
-  background: black;
+  background: #212529;
   padding: 10px;
   display: flex;
   flex-direction: column;
