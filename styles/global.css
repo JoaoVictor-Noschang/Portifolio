@@ -7,6 +7,10 @@
     font-family: 'KoHo', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .sec {
     background: rgb(207, 207, 207);
     min-height: 100vh;
@@ -29,6 +33,7 @@
 .detalhes {
   display: flex;
   justify-content: end;
+  gap: 5px;
 }
 
 .detalhes a {
@@ -39,6 +44,7 @@
   color: white;
   text-decoration: none;
   font-weight: 500;
+  font-size: 0.875rem;
 }
 
 .detalhes a:hover {

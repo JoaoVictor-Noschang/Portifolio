@@ -14,7 +14,12 @@
   top: 25px;
   left: 50%;
   transform: translate(-50%);
+  transition: top 0.4s ease-in-out;
   z-index: 10;
+}
+
+.nav-hidden {
+  top: -70px;
 }
 
 .navbar a {
